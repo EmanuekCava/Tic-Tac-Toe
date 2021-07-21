@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- GAME -->
+
+    <main>
+        <div class="container-title">
+            <h1>TIC TAC TOE</h1>
+        </div>
+        <div class="container-table">
+            <table>
+                <tr>
+                    <th class="top-left" id="team-top-left">
+                        <button id="button-top-left"></button>
+                    </th><th class="top" id="team-top">
+                        <button id="button-top"></button>
+                    </th><th class="top-right" id="team-top-right">
+                        <button id="button-top-right"></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="left" id="team-left">
+                        <button id="button-left"></button>
+                    </th><th class="center" id="team-center">
+                        <button id="button-center"></button>
+                    </th><th class="right" id="team-right">
+                        <button id="button-right"></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="bottom-left" id="team-bottom-left">
+                        <button id="button-bottom-left"></button>
+                    </th><th class="bottom" id="team-bottom">
+                        <button id="button-bottom"></button>
+                    </th><th class="bottom-right" id="team-bottom-right">
+                        <button id="button-bottom-right"></button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+    <!-- WIN -->
+
+    <main class="container-win" id="container-win">
+        <div class="container-card">
+            <div id="container-card">
+
+            </div>
+            <button id="again">AGAIN</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

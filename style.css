@@ -1,0 +1,139 @@
+:root {
+    --colour-game: rgb(216, 115, 115)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* TITLE */
+
+.container-title {
+    text-align: center;
+    height: 122px;
+}
+.container-title h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: var(--colour-game);
+    line-height: 122px;
+}
+
+/* TABLE */
+
+.container-table {
+    height: calc(100vh - 122px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+}
+table tr th {
+    cursor: default;
+    width: 200px;
+    height: 150px;
+    font-size: 48px;
+    padding: 42px;
+}
+.top-left {
+    border-bottom: 2px solid var(--colour-game);
+    border-right: 2px solid var(--colour-game);
+}
+.top {
+    border-bottom: 2px solid var(--colour-game);
+    border-right: 2px solid var(--colour-game);
+    border-left: 2px solid var(--colour-game);
+}
+.top-right {
+    border-bottom: 2px solid var(--colour-game);
+    border-left: 2px solid var(--colour-game);
+}
+.left {
+    border-bottom: 2px solid var(--colour-game);
+    border-right: 2px solid var(--colour-game);
+    border-top: 2px solid var(--colour-game);
+}
+.center {
+    border: 2px solid var(--colour-game);
+}
+.right {
+    border-bottom: 2px solid var(--colour-game);
+    border-left: 2px solid var(--colour-game);
+    border-top: 2px solid var(--colour-game);
+}
+.bottom-left {
+    border-right: 2px solid var(--colour-game);
+    border-top: 2px solid var(--colour-game);
+}
+.bottom {
+    border-right: 2px solid var(--colour-game);
+    border-left: 2px solid var(--colour-game);
+    border-top: 2px solid var(--colour-game);
+}
+.bottom-right {
+    border-left: 2px solid var(--colour-game);
+    border-top: 2px solid var(--colour-game);
+}
+
+/* BUTTONS */
+
+table tr th button {
+    height: calc(100% + 84px);
+    width: calc(100% + 84px);
+    margin-left: -42px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+/* WIN */
+
+.container-win {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .9;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.container-card {
+    width: 33%;
+    background-color: #fff;
+    margin: auto;
+    height: 400px;
+    display: block;
+    padding: 140px 94px;
+    border-radius: 16px;
+    text-align: center;
+}
+.container-card button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 255, 42);
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.container-card button:hover {
+    background-color: rgb(53, 255, 87);
+}
+.container-card button:active {
+    background-color: rgb(0, 255, 42);
+}
